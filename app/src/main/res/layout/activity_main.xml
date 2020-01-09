@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TableLayout android:layout_width="match_parent"
+                 android:layout_marginTop="100dp"
+                 android:layout_height="wrap_content">
+        <TableRow android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="用户名"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="@string/user"
+                      android:inputType="textEmailAddress"
+                      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                      android:layout_weight="1"
+                      android:id="@+id/user"
+            >
+            </EditText>
+        </TableRow>
+        <TableRow android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content"
+
+                      android:layout_height="wrap_content"
+                      android:text="密     码:"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="@string/password"
+                      android:inputType="textPassword"
+                      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                      android:layout_weight="1"
+                      android:id="@+id/pwd"
+            >
+            </EditText>
+        </TableRow>
+        <TableRow android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content"
+
+                      android:layout_height="wrap_content"
+                      android:text="手机号"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:hint="@string/phone"
+                      android:layout_weight="1"
+                      android:inputType="phone"
+                      android:id="@+id/phone"
+            >
+            </EditText>
+        </TableRow>
+        <TableRow android:layout_width="match_parent">
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="返回"
+                    android:layout_margin="10dp"
+                    android:id="@+id/up"
+                    android:layout_weight="1"
+
+            />
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="@string/up"
+                    android:background="#5EB4EF"
+                    android:layout_weight="3"
+                    android:layout_margin="10dp"
+                    android:id="@+id/in"
+            />
+        </TableRow>
+        <TableRow android:layout_width="match_parent">
+            <TextView
+                    android:layout_weight="8"
+            ></TextView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/forget"
+                      android:layout_weight="1"
+                      android:text="@string/forget"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

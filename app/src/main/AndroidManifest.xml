@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- 连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:roundIcon="@drawable/ic_launcher"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+
+        <activity
+                android:name=".novart"
+                android:label="@string/title_activity_novart">
+        </activity>
+        <activity android:name=".taobleBur">
+        </activity>
+        <activity
+                android:name=".showMessageLi"
+                android:label="@string/title_activity_show_message_li"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".lixianmoshi">
+        </activity>
+        <activity android:name=".SheZhi">
+        </activity>
+        <activity android:name=".ShowCollect">
+        </activity>
+        <activity android:name=".fankui">
+        </activity>
+        <activity android:name=".userinfo">
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".editplus">
+        </activity>
+        <activity android:name=".jz">
+        </activity>
+        <activity android:name=".pwd">
+        </activity>
+        <activity android:name=".messageInfo">
+        </activity>
+        <activity android:name=".foregt">
+        </activity>
+        <activity android:name=".context">
+        </activity>
+        <activity android:name=".login">
+        </activity>
+        <activity
+                android:name=".ggy"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.example.myapplication.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+
+</manifest>
